@@ -2,7 +2,8 @@
 <body>
 
 <h2>Fortune Teller</h2
-
+<p id="demo"></p>
+  
 <script>
 const myObject = {
   numKids:"3",
@@ -10,12 +11,12 @@ const myObject = {
   geoLocation = "Spain",
   jobTitle = "Ultrasound Technician",
   
-  fullName: function() {
+  fortune: function() {
     return this."You will be a " + jobTitle + " in " + geoLocation + ", and married to " +
    partner + " " + " with " + numKids + this." kids.";
   }
 }
-document.getElementById("demo").innerHTML = myObject.fullName();
+document.getElementById("demo").innerHTML = myObject.fortune();
 </script>
 
 </body>
