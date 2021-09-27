@@ -1,13 +1,12 @@
 <html>
-  <head>
-    <title>Functons and Events</title>
-    <script> 
-      function showMessage() {
-     alert(onclick);
-      }
-     </script>
-  </head>
-  <body onload="console.log('The page has loaded.')">
-    <button onclick="again()">The button was clicked</button>
+  <script>
+    function showEvent(from, text) {
+    alert( from + text );}
+    showEvent('Load','Page');
+   </script>
+
+  <body onload = "showEvent('The page has loaded.')">
+
+  <button onclick= "showEvent('The button was clicked.')" type="button">Click me!</button>
   </body>
 </html>
