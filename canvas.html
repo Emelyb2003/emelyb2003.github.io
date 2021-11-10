@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<a href="https://emelyb2003.github.io/">Visit my main page</a>
+<body>
+  <h1>The canvas element</h1>
+  <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(5, 5, 300, 300);
+  
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = "red"; 
+    ctx.fillRect(50, 100, 300, 300); 
+    ctx.fillStyle = "blue"; 
+    ctx.fillRect(100, 50, 300, 300);
 
+     ctx.globalAlpha = 2;
+    ctx.fillStyle = "purple"; 
+    ctx.fillRect(150, 150, 200, 200); 
+    ctx.fillRect(120, 120, 200, 200); 
+  </script>
+
+ <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(75, 60, 60, 0, 2 * Math.PI);
+    ctx.stroke();
+  </script>
+ </body>
+</html>
